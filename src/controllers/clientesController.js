@@ -20,7 +20,7 @@ const getByCpf = (req, res) => {
 
     const cpf = req.params.cpf
 
-    clientes.find({ cpf}, function (err, tarefas) {
+    clientes.find({ cpf}, function (err, clientes) {
       res.status(200).send(clientes);
 });
 };
